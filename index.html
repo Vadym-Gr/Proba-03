@@ -30,156 +30,104 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 
-    <title>WebStudio</title>
+    <title>Proba-03</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header-container">
-            <nav class="header-navigation">
-                <a class="header-logo" href="./index.html">Web<span class="web">Studio</span></a>
-                <ul class="header-menu-list">
-                    <li class="header-menu-item"><a class="header-menu-link" href="./index.html">Studio</a></li>
-                    <li class="header-menu-item"><a class="header-menu-link" href="">Portfolio</a></li>
-                    <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="header-contacts">
-                <ul class="header-contacts-list">
-                    <li class="header-contacts-item"><a class="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="header-contacts-item"><a class="header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
-        </div>
-    </header>
-
-    <main>
+    <section class="artist-modal-section" id="artist-modal-section">
         
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
-            </div>
-        </section>
-
-        <section class="our-advantages section">
-                <div class="container">
-                    <h2 class="visually-hidden">Our Advantages</h2>
-                    <ul class="advantages-section-list">
-                        <li class="advantages-section-item">
-                            <h3 class="advantages-section-subtitle">Strategy</h3>
-                            <p class="advantages-section-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
-                        </li>
-                        <li class="advantages-section-item">
-                            <h3 class="advantages-section-subtitle">Punctuality</h3>
-                            <p class="advantages-section-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                        </li>
-                        <li class="advantages-section-item">
-                            <h3 class="advantages-section-subtitle">Diligence</h3>
-                            <p class="advantages-section-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
-                        </li>
-                        <li class="advantages-section-item">
-                            <h3 class="advantages-section-subtitle">Technologies</h3>
-                            <p class="advantages-section-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                        </li>
-                    </ul>
+        <!--------- ARTIST MODAL BACKDROP --------->
+        <div class="artist-modal-backdrop is-hidden-modal" data-modal-backdrop>
+            
+            <!--------- ARTIST MODAL --------->
+            <div class="artist-modal"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="artist-modal-title"
+                 tabindex="-1"
+                 data-artist-modal
+                >
+                <!----- ARTIST MODAL CLOSE BUTTON ----->
+                 <button
+                    type="button"
+                    class="artist-modal-close"
+                    aria-label="Close artist details" 
+                    data-modal-close>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.866 13.3946L13.3945 13.866C13.1342 14.1263 12.7121 14.1263 12.4517 13.866L7.03064 8.44484L1.60944 13.8659C1.34914 14.1263 0.927022 14.1263 0.666672 13.8659L0.195262 13.3945C-0.0650875 13.1342 -0.0650875 12.7121 0.195262 12.4517L5.61644 7.03064L0.195262 1.60944C-0.0650875 1.34914 -0.0650875 0.927022 0.195262 0.666672L0.666662 0.195272C0.927012 -0.065078 1.34914 -0.065078 1.60944 0.195272L7.03064 5.61644L12.4517 0.195262C12.7121 -0.0650875 13.1342 -0.0650875 13.3945 0.195262L13.866 0.666662C14.1263 0.927012 14.1263 1.34914 13.866 1.60944L8.44484 7.03064L13.866 12.4517C14.1263 12.7121 14.1263 13.1342 13.866 13.3946Z" fill="white" />
+                    </svg>
+                </button>
+                <!----- ARTIST MODAL HEADER ----->
+                <div class="artist-modal-header">
+                    <p class="artist-modal-title" id="artist-modal-title">Artist Name</p>
                 </div>
-        </section>
 
-        <section class="our-team section">
-            <div class="container">
-                <h2 class="team-section-title">Our Team</h2>
-                <ul class="team-section-list">
-                    <li class="team-section-item">
-                        <img class="team-section-img" src="./images/img-01-mark.jpg" alt="photo of Mark Guerrero" width="264" height="260">
-                        <div class="team-card-text">
-                            <h3 class="team-section-subtitle">Mark Guerrero</h3>
-                            <p class="team-section-text">Product Designer</p>
-                        </div>
-                    </li>
-                    <li class="team-section-item">
-                        <img class="team-section-img" src="./images/img-02-tom.jpg" alt="photo of Tom Ford" width="264" height="260">
-                        <div class="team-card-text">
-                            <h3 class="team-section-subtitle">Tom Ford</h3>
-                            <p class="team-section-text">Frontend Developer</p>
-                        </div>
-                    </li>
-                    <li class="team-section-item">
-                        <img class="team-section-img" src="./images/img-03-camila.jpg" alt="photo of Camila Garcia" width="264" height="260">
-                        <div class="team-card-text">
-                            <h3 class="team-section-subtitle">Camila Garcia</h3>
-                            <p class="team-section-text">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="team-section-item">
-                        <img class="team-section-img" src="./images/img-04-daniel.jpg" alt="photo of Daniel Wilson" width="264" height="260">
-                        <div class="team-card-text">
-                            <h3 class="team-section-subtitle">Daniel Wilson</h3>
-                            <p class="team-section-text">UI Designer</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <!----- ARTIST MODAL MAIN CONTENT ----->
+                <div class="artist-modal-content">
+                    
+                    <!--- ARTIST MODAL IMAGE --->
+                    <div class="artist-modal-image-wrapper">
+                        <img
+                           src=""
+                           alt="Artist modal photo"
+                           class="artist-modal-image"
+                           data-artist-image
+                        />
+                    </div>
+                    
+                    <!--- ARTIST MODAL META --->
+                    <div class="artist-modal-meta-wrapper">
 
-        <section class="our-portfolio section">            
-                <div class="container">
-                    <h2 class="portfolio-section-title">Our Portfolio</h2>
-                    <ul class="portfolio-section-list">
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-05-banking-app.jpg" alt="photo of banking app" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Banking App</h3>
-                                <p class="portfolio-section-text">App</p>
-                            </div>                          
-                        </li>
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-06-cashless-payment.jpg" alt="photo of cashless payment" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Cashless Payment</h3>
-                                <p class="portfolio-section-text">Marketing</p>
+                        <ul class="artist-modal-meta">
+
+                            <div class="artist-modal-meta-row-one">
+                                <li class="artist-modal-years-item">
+                                    <p class="artist-modal-meta-label">Years active:</p>
+                                    <p class="artist-modal-meta-value" data-artist-years>information missing</p>
+                                </li>
+    
+                                <li class="artist-modal-sex-item">
+                                    <p class="artist-modal-meta-label">Sex</p>
+                                    <p class="artist-modal-meta-value" data-artist-gender>M</p>
+                                </li>
                             </div>
-                        </li>
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-07-meditation-app.jpg" alt="photo of meditation app" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Meditation App</h3>
-                                <p class="portfolio-section-text">App</p>
+
+                            <div class="artist-modal-meta-row-two">
+                                <li class="artist-modal-members-item">
+                                    <p class="artist-modal-meta-label">Members:</p>
+                                    <p class="artist-modal-meta-value" data-artist-members>2</p>
+                                </li>
+    
+                                <li class="artist-modal-country-item">
+                                    <p class="artist-modal-meta-label">Country:</p>
+                                    <p class="artist-modal-meta-value" data-artist-country>United States</p>
+                                </li>
                             </div>
-                        </li>
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-08-taxi-service.jpg" alt="photo of taxi service" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Taxi Service</h3>
-                                <p class="portfolio-section-text">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-09-screen-illustrations.jpg" alt="photo of screen illustrations" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Screen Illustrations</h3>
-                                <p class="portfolio-section-text">Design</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-section-item">
-                            <img class="portfolio-section-img" src="./images/img-10-online-courses.jpg" alt="photi of online courses" width="360" height="300">
-                            <div class="portfolio-card-text">
-                                <h3 class="portfolio-section-subtitle">Online Courses</h3>
-                                <p class="portfolio-section-text">Marketing</p>
-                            </div>
-                        </li>
-                    </ul>
+
+                            <!--- ARTIST MODAL BIOGRAPHY --->
+                            <li class="artist-modal-bio">
+                                <p class="artist-modal-bio-title">Biography</p>
+                                <p class="artist-modal-bio-text" data-artist-bio>dfdff dfdfgdg</p>
+                            </li>
+                            
+                            <!--- ARTIST MODAL GENRES --->
+                            <li class="artist-modal-genres">
+                                <ul class="artist-modal-genres-list" data-artist-genres>
+                                    <li class="artist-modal-genres-item">Genre 1</li>
+                                </ul>
+                                
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-            </section>            
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <a class="footer-logo" href="./index.html">Web<span class="stud">Studio</span></a>
-            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                <!--- ARTIST MODAL ALBUMS --->
+                <div class="artist-modal-albums" data-artist-albums>
+
+                </div>
+
+            </div>   
         </div>
-    </footer>
-
-</body>
-</html>
+    </section>
